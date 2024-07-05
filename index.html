@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Notas</title>
+    <!-- Favicon -->
+    <link rel="icon" href="Imagenes/note.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .icon {
+            width: 24px;
+            height: 24px;
+            background-image: url("Imagenes/note.png");
+            background-size: cover;
+        }
+        body {
+            /* Asegurar que el texto sea legible sobre fondo oscuro */
+            color: white;
+        }
+        
+        .note-text {
+            color: black; /* Color de texto para las notas */
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">
+            Mis Notas 
+            <span class="icon"></span> <!-- Icono personalizado -->
+        </h1>
+        <div id="notes-container" class="row mb-4">
+            <!-- Notas se agregarán dinámicamente desde JavaScript -->
+        </div>
+        <div id="add-note" class="form-group">
+            <textarea id="note-text" class="form-control mb-2" placeholder="Escribe tu nota aquí..." rows="5"></textarea>
+            <button id="add-btn" class="btn btn-primary">Agregar Nota</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
